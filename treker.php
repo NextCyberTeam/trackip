@@ -5,11 +5,13 @@ error_reporting(0);
 function banner()
 {
         echo "
-        echo " _ _ ____ _____ "
-        echo " | \ | | | ___ | _ _ | "
-        echo " | \ | | | | | "
-        echo " | | \ | |___ | | "
-        echo " | _ | \ _ | \ ____ | | _ | "
+        \033[94m _ _ ____ _____
+         \033[94m| \ | | | ___ | _ _ |
+         \033[94m| \ | | | | |
+         \033[94m| | \ | |___ | |
+         \033[94m| _ | \ _ | \ ____ | | _ |
+	 \033[94m|Author : NextCyberHack
+	 \033[94m|My Team : Next Cyber Team
 ";
 }
 
