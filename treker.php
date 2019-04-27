@@ -10,10 +10,6 @@ function banner()
         echo " | \ | | | | | "
         echo " | | \ | |___ | | "
         echo " | _ | \ _ | \ ____ | | _ | "
-
-
-
-
 ";
 }
 
@@ -76,6 +72,9 @@ echo "\033[97mIP OR DOMAIN : \033[92m";
 $urip = trim(fgets(STDIN, 1024));
 if( is_numeric($urip) ){
 	echo "\033[94mTracking...........\n";
+	track($ip);
+}else{	
+	$ip = gethostbyname($urip);
 	track($ip);
 
 }
